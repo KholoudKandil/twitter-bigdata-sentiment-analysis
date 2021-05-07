@@ -1,0 +1,20 @@
+#create a virtual environment for your project to aviod conflict with pre-installed modules
+python3.6 -m venv ./<environment_name> 
+
+#if you're using hdp-sandbox 3.0.1 you probably have an old pyspark version, make sure to reinstall the following pyspark module 
+pip install --force-reinstall pyspark==2.4.6
+
+#install the following libiraries to be imported in your script
+pip install kafka-python
+pip install oauthlib
+pip install requests
+pip install requests-oauthlib
+pip install six
+pip install tweepy
+pip install textblob
+pip install datetime
+
+#make sure to include neccessary packages and jars in your spark-submit command 
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-10_2.11:2.4.6,org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.6 --master local[*] /root/tweets_consumer_analyzer_replyer.py
+
+
