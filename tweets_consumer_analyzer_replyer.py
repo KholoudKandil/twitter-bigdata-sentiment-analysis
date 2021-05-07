@@ -55,10 +55,10 @@ def text_classification(words):
     return words
 if __name__ == "__main__":
     #preparing for reply
-    consumer_key = "oKHLc1OEtFqDmes3rzx7axFxH"
-    consumer_secret = "8uDv2Wxcp9GCFFbv7V9GwmOZ1PtFylEYGNplYIWDfejrLu0Gsj"
-    access_key = "1385696117938077700-baAP81Eor9jNoZ8sbwWKx7serPVntU"
-    access_secret = "lu4dUyb6O2yfhRFiX3dt9kKMTefAVT9q6vS7cbr1jhfMT"
+    consumer_key = "insert yours"
+    consumer_secret = "insert yours"
+    access_key = "insert yours"
+    access_secret = "insert yours"
     
     auth = tw.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_key, access_secret)
